@@ -41,11 +41,13 @@ public class Program
 
         var clone = solution.CloneQueue(original);
 
+        Console.WriteLine("\nThis is the original queue:");
         foreach (var item in clone)
         {
             Console.WriteLine(item);
         }
 
+        Console.WriteLine("\nThis is the cloned queue:");
         foreach (var item in original)
         {
             Console.WriteLine(item);
