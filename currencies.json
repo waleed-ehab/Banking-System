@@ -1,0 +1,260 @@
+[
+  {
+    "Country": "United States of America",
+    "Code": "USD",
+    "Name": "US Dollar",
+    "Rate": 1.000000
+  },
+  {
+    "Country": "Afghanistan",
+    "Code": "AFN",
+    "Name": "Afghanistan Afghani",
+    "Rate": 87.480003
+  },
+  {
+    "Country": "Albania",
+    "Code": "ALL",
+    "Name": "Albania Lek(e)",
+    "Rate": 109.010002
+  },
+  {
+    "Country": "Algeria",
+    "Code": "DZD",
+    "Name": "Algerian Dinar",
+    "Rate": 137.046005
+  },
+  {
+    "Country": "American Samoa",
+    "Code": "USD",
+    "Name": "US Dollar",
+    "Rate": 1.000000
+  },
+  {
+    "Country": "France",
+    "Code": "EUR",
+    "Name": "Euro",
+    "Rate": 0.900000
+  },
+  {
+    "Country": "Angola",
+    "Code": "AOA",
+    "Name": "Angolan Kwanza",
+    "Rate": 504.734009
+  },
+  {
+    "Country": "Anguilla",
+    "Code": "XCD",
+    "Name": "E.C. Dollar",
+    "Rate": 2.700000
+  },
+  {
+    "Country": "Antigua and Barbuda",
+    "Code": "XCD",
+    "Name": "E.C. Dollar",
+    "Rate": 2.700000
+  },
+  {
+    "Country": "Argentina",
+    "Code": "ARS",
+    "Name": "Argentine Peso",
+    "Rate": 171.744995
+  },
+  {
+    "Country": "Armenia",
+    "Code": "AMD",
+    "Name": "Armenian Dram",
+    "Rate": 391.700012
+  },
+  {
+    "Country": "Aruba",
+    "Code": "AWG",
+    "Name": "Aruban Guilder",
+    "Rate": 1.790000
+  },
+  {
+    "Country": "Australia",
+    "Code": "AUD",
+    "Name": "Australian Dollar",
+    "Rate": 1.451000
+  },
+  {
+    "Country": "Austria",
+    "Code": "EUR",
+    "Name": "Euro",
+    "Rate": 0.938000
+  },
+  {
+    "Country": "Azerbaijan",
+    "Code": "AZN",
+    "Name": "Azerbaijan Manat",
+    "Rate": 1.694000
+  },
+  {
+    "Country": "Bahamas",
+    "Code": "BSD",
+    "Name": "Bahamian Dollar",
+    "Rate": 1.000000
+  },
+  {
+    "Country": "Bahrain",
+    "Code": "BHD",
+    "Name": "Bahraini Dinar",
+    "Rate": 0.377000
+  },
+  {
+    "Country": "Bangladesh",
+    "Code": "BDT",
+    "Name": "Bangladesh Taka",
+    "Rate": 101.000000
+  },
+  {
+    "Country": "Barbados",
+    "Code": "BBD",
+    "Name": "Barbados Dollar",
+    "Rate": 2.000000
+  },
+  {
+    "Country": "Belarus",
+    "Code": "BYN",
+    "Name": "Belarusian Ruble",
+    "Rate": 2.478000
+  },
+  {
+    "Country": "Belgium",
+    "Code": "EUR",
+    "Name": "Euro",
+    "Rate": 0.938000
+  },
+  {
+    "Country": "Belize",
+    "Code": "BZD",
+    "Name": "Belize Dollar",
+    "Rate": 2.000000
+  },
+  {
+    "Country": "Benin",
+    "Code": "XOF",
+    "Name": "CFA Franc",
+    "Rate": 615.401978
+  },
+  {
+    "Country": "Bermuda",
+    "Code": "BMD",
+    "Name": "Bermuda Dollar",
+    "Rate": 1.000000
+  },
+  {
+    "Country": "Bhutan",
+    "Code": "BTN",
+    "Name": "Bhutan Ngultrum",
+    "Rate": 82.800003
+  },
+  {
+    "Country": "Bolivia",
+    "Code": "BOB",
+    "Name": "Bolivia Boliviano",
+    "Rate": 6.852000
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "Code": "BAM",
+    "Name": "Bosnia and Herzegovina Convertible Mark",
+    "Rate": 1.835000
+  },
+  {
+    "Country": "Botswana",
+    "Code": "BWP",
+    "Name": "Botswana Pula",
+    "Rate": 12.953000
+  },
+  {
+    "Country": "Brazil",
+    "Code": "BRL",
+    "Name": "Brazilian Real",
+    "Rate": 5.261000
+  },
+  {
+    "Country": "Brunei",
+    "Code": "BND",
+    "Name": "Brunei Dollar",
+    "Rate": 1.344000
+  },
+  {
+    "Country": "Bulgaria",
+    "Code": "BGN",
+    "Name": "Bulgarian Lev",
+    "Rate": 1.835000
+  },
+  {
+    "Country": "Burkina Faso",
+    "Code": "XOF",
+    "Name": "CFA Franc",
+    "Rate": 615.401978
+  },
+  {
+    "Country": "Burundi",
+    "Code": "BIF",
+    "Name": "Burundi Franc",
+    "Rate": 2043.123047
+  },
+  {
+    "Country": "Cambodia",
+    "Code": "KHR",
+    "Name": "Cambodian Riel",
+    "Rate": 4130.000000
+  },
+  {
+    "Country": "Cameroon",
+    "Code": "XAF",
+    "Name": "CFA Franc",
+    "Rate": 615.401978
+  },
+  {
+    "Country": "Canada",
+    "Code": "CAD",
+    "Name": "Canadian Dollar",
+    "Rate": 1.353000
+  },
+  {
+    "Country": "Egypt",
+    "Code": "EGP",
+    "Name": "Egyptian Pound",
+    "Rate": 49.400002
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Code": "SAR",
+    "Name": "Saudi Riyal",
+    "Rate": 3.759000
+  },
+  {
+    "Country": "United Arab Emirates",
+    "Code": "AED",
+    "Name": "United Arab Emirates Dirham",
+    "Rate": 3.673000
+  },
+  {
+    "Country": "United Kingdom",
+    "Code": "GBP",
+    "Name": "U.K. Pound",
+    "Rate": 0.804000
+  },
+  {
+    "Country": "Japan",
+    "Code": "JPY",
+    "Name": "Japanese Yen",
+    "Rate": 134.869995
+  },
+  {
+    "Country": "China",
+    "Code": "CNY",
+    "Name": "Chinese Renminbi",
+    "Rate": 6.940000
+  },
+  {
+    "Country": "India",
+    "Code": "INR",
+    "Name": "Indian Rupee",
+    "Rate": 82.800003
+  }
+]

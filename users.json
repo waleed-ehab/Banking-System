@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "32959e82",
+    "FirstName": "Waleed",
+    "LastName": "Ehab",
+    "Phone": "01238473343",
+    "FullName": "Waleed Ehab",
+    "Email": "lobo123@gmail.com",
+    "Username": "admin",
+    "PasswordHash": "$2a$11$dtjqr2wqswwIGeTi6RN0keCYr4RGkvCL.Ad3yxsQksOb.JHtGkMpu",
+    "Role": "Admin",
+    "Permissions": "rwx"
+  }
+]
