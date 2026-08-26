@@ -20,7 +20,7 @@ public class LoginUseCase
 
     public LoginResponse Execute(LoginRequest request)
     {
-        var user = _userRepository.GetByUsername(request.Username.ToLowerInvariant())
+        var user = _userRepository.GetByUsername(request.Username)
             ?? throw new UnauthorizedException("Invalid credentials.");
 
         if (!_passwordHasher.Verify(request.Password, user.Password.Hash))
