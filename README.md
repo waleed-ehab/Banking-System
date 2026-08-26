@@ -47,6 +47,13 @@ dotnet build
 dotnet run --project BankingSystem.Presentation
 ```
 
+### Default Admin Login
+
+```
+Username: admin
+Password: 1234
+```
+
 ## Project Structure
 
 ```
