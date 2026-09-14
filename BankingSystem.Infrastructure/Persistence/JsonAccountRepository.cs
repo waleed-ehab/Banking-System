@@ -1,7 +1,7 @@
 ﻿using BankingSystem.Application.Interfaces;
 using BankingSystem.Domain.Entities;
 using BankingSystem.Domain.ValueObjects;
-using BankingSystem.Domain.DataModels;
+using BankingSystem.Infrastructure.DataModels;
 using System.Text.Json;
 
 namespace BankingSystem.Infrastructure.Persistence;

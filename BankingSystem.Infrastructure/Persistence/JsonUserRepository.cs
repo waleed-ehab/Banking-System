@@ -3,8 +3,8 @@ using BankingSystem.Domain.Entities;
 using BankingSystem.Domain.Enums;
 using BankingSystem.Domain.ValueObjects;
 using BankingSystem.Domain.Converters;
-using BankingSystem.Domain.DataModels;
 using System.Text.Json;
+using BankingSystem.Infrastructure.DataModels;
 
 namespace BankingSystem.Infrastructure.Persistence;
 
