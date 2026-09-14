@@ -87,7 +87,7 @@ public class JsonTransferRepository : ITransferRepository
         return Transfer.Rehydrate(
             dataModel.SourceAccountId,
             dataModel.DestinationAccountId,
-            Balance.Create(dataModel.Amount, dataModel.CurrencyCode),
+            Balance.Rehydrate(dataModel.Amount, dataModel.CurrencyCode),
             dataModel.Date
         );
     }

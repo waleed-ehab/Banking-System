@@ -116,7 +116,7 @@ public class JsonTransactionRepository : ITransactionRepository
             dataModel.TransactionId,
             dataModel.AccountId,
             dataModel.ClientId,
-            Balance.Create(dataModel.Amount, dataModel.CurrencyCode),
+            Balance.Rehydrate(dataModel.Amount, dataModel.CurrencyCode),
             Enum.Parse<TransactionType>(dataModel.Type),
             dataModel.Date
         );

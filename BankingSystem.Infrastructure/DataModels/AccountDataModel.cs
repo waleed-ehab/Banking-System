@@ -1,4 +1,4 @@
-﻿namespace BankingSystem.Domain.DataModels
+﻿namespace BankingSystem.Infrastructure.DataModels
 {
     public class AccountDataModel
     {

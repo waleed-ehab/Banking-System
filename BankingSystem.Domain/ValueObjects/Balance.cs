@@ -16,15 +16,17 @@ public class Balance
     public static Balance Create(decimal amount, string currencyCode)
     {
         if (amount < 0)
-            throw new DomainException("Amount cannot be negative.");
-
-        if (amount > 10000)
-            throw new DomainException("Amount cannot exceed 10,000");
+            throw new DomainException($"Amount cannot be negative.");
 
         if (string.IsNullOrWhiteSpace(currencyCode) || currencyCode.Length != 3)
             throw new DomainException("Currency code must contain exactly 3 letters (e.g. EGP, USD).");
 
         return new Balance(Math.Round(amount, 2), currencyCode);
+    }
+
+    public static Balance Rehydrate(decimal amount, string currencyCode)
+    {
+        return new Balance(amount, currencyCode);
     }
 
     public Balance Add(Balance balance)

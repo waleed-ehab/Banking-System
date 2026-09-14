@@ -9,7 +9,7 @@ namespace BankingSystem.Application.UseCases.Transactions;
 
 public record DepositRequest(string AccountId, decimal Amount);
 
-public record DepositResponse(string AccountId, string ClientId, decimal Balance, string CurrencyCode, string PinCode, bool IsLocked, bool IsDeleted);
+public record DepositResponse(string ClientId, string AccountId, decimal Balance, string CurrencyCode, string PinCode, bool IsLocked, bool IsDeleted);
 
 public class DepositUseCase
 {
@@ -38,7 +38,7 @@ public class DepositUseCase
         var account = _accountRepository.GetById(request.AccountId);
 
         if (account is null || (_currentUser.Role == UserRole.Client && account.UserId != _currentUser.Id))
-            throw new DomainException($"Account with id '{request.AccountId}' not found.");
+            throw new NotFoundException($"Account with id '{request.AccountId}' not found.");
 
         var amount = Balance.Create(request.Amount, account.Balance.CurrencyCode);
 

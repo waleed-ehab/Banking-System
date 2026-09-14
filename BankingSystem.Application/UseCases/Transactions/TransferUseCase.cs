@@ -31,7 +31,7 @@ public class TransferUseCase
         var sourceAccount = _accountRepository.GetById(request.SourceAccountId);
 
         if (sourceAccount is null || (_currentUser.Role == UserRole.Client && sourceAccount.UserId != _currentUser.Id))
-            throw new KeyNotFoundException($"Source account with id '{request.SourceAccountId}' not found.");
+            throw new NotFoundException($"Source account with id '{request.SourceAccountId}' not found.");
 
         var destinationAccount = _accountRepository.GetById(request.DestinationAccountId);
 

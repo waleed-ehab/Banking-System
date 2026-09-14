@@ -6,7 +6,7 @@ using BankingSystem.Domain.Converters;
 using BankingSystem.Domain.DataModels;
 using System.Text.Json;
 
-namespace BankingSystem.Domain.Persistence;
+namespace BankingSystem.Infrastructure.Persistence;
 
 public class JsonUserRepository : IUserRepository
 {

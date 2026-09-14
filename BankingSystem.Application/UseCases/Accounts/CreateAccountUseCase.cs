@@ -4,6 +4,7 @@ using BankingSystem.Application.Interfaces;
 using BankingSystem.Domain.Common;
 using BankingSystem.Domain.Entities;
 using BankingSystem.Domain.Enums;
+using BankingSystem.Domain.Exceptions;
 using BankingSystem.Domain.ValueObjects;
 
 namespace BankingSystem.Application.UseCases.Accounts;
@@ -48,6 +49,9 @@ public class CreateAccountUseCase
 
         if (currency is null)
             throw new NotFoundException($"Currency with code '{request.CurrencyCode}' not found.");
+
+        if (request.InitialAmount > 10000)
+            throw new DomainException("Initial balance cannot exceed 10,000.");
 
         var initialPin = PinCode.Generate();
         var encryptedPin = _encryptionService.Encrypt(initialPin);

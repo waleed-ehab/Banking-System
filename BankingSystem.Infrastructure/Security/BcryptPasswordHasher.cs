@@ -1,6 +1,6 @@
 ﻿using BankingSystem.Application.Interfaces;
 
-namespace BankingSystem.Domain.Security;
+namespace BankingSystem.Infrastructure.Security;
 
 public class BcryptPasswordHasher : IPasswordHasher
 {

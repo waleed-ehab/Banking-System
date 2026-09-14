@@ -2,6 +2,8 @@
 using System.Security.Cryptography;
 using System.Text;
 
+namespace BankingSystem.Infrastructure.Security;
+
 public class AesEncryptionService : IEncryptionService
 {
     private readonly byte[] _key;

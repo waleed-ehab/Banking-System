@@ -1,6 +1,7 @@
 ﻿using BankingSystem.Application.Exceptions;
 using BankingSystem.Application.Interfaces;
 using BankingSystem.Domain.Enums;
+using BankingSystem.Domain.Exceptions;
 using BankingSystem.Domain.ValueObjects;
 using System.ComponentModel.DataAnnotations;
 
@@ -34,7 +35,7 @@ public class UpdateCurrencyUseCase
         var diff = Math.Abs(existing.Rate - request.Rate);
 
         if (diff > existing.Rate * 0.5m)
-            throw new ValidationException("Exchange rate change is too extreme.");
+            throw new DomainException("Exchange rate change is too extreme.");
 
         var updated = Currency.Create(existing.Country, existing.Code, existing.Name, request.Rate);
 

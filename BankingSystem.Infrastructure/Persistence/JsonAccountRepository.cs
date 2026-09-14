@@ -4,7 +4,7 @@ using BankingSystem.Domain.ValueObjects;
 using BankingSystem.Domain.DataModels;
 using System.Text.Json;
 
-namespace BankingSystem.Domain.Persistence;
+namespace BankingSystem.Infrastructure.Persistence;
 
 public class JsonAccountRepository : IAccountRepository
 {
@@ -111,7 +111,7 @@ public class JsonAccountRepository : IAccountRepository
             dataModel.AccountId,
             Pin.FromEncryptedText(dataModel.PinHash),
             dataModel.UserId,
-            Balance.Create(dataModel.Balance, dataModel.CurrencyCode),
+            Balance.Rehydrate(dataModel.Balance, dataModel.CurrencyCode),
             dataModel.IsLocked,
             dataModel.FailedAttempts,
             dataModel.LockedUntil,
