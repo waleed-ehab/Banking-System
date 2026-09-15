@@ -1,6 +1,7 @@
 ﻿using BankingSystem.Application.Exceptions;
 using BankingSystem.Application.Interfaces;
 using BankingSystem.Domain.Exceptions;
+using BankingSystem.Domain.ValueObjects;
 
 namespace BankingSystem.Application.UseCases.Currencies;
 
@@ -24,10 +25,8 @@ public class ConvertCurrencyUseCase
         var toCurrency = _currencyRepository.GetByCode(request.ToCode.ToUpper())
             ?? throw new NotFoundException($"To currency with code '{request.ToCode}' not found.");
 
-        if (request.FromAmount < 0)
-            throw new DomainException($"Amount to convert cannot be negative.");
-
-        var convertedAmount =  request.FromAmount * (toCurrency.Rate / fromCurrency.Rate);
+        var fromBalance = Balance.Create(request.FromAmount, fromCurrency.Code);
+        var convertedAmount = fromBalance.Amount * (toCurrency.Rate / fromCurrency.Rate);
 
         return new ConvertCurrencyResponse(
             fromCurrency.Name,
