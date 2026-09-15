@@ -1,5 +1,6 @@
 ﻿using BankingSystem.Application.Exceptions;
 using BankingSystem.Application.Interfaces;
+using BankingSystem.Domain.Entities;
 using BankingSystem.Domain.Enums;
 
 namespace BankingSystem.Application.UseCases.Accounts;

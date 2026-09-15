@@ -27,7 +27,7 @@ public class DeleteClientUseCase
 
         var accounts = _accountRepository.GetAll();
 
-        if (accounts.Any(a => a.UserId == request.Id))
+        if (accounts.Any(a => a.UserId == request.Id && !a.IsDeleted))
             throw new ClientHasAccountsException("\nCannot delete client because it is linked to existing account(s).");
 
         var user = _userRepository.GetById(request.Id);
